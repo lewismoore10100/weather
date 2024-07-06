@@ -3,12 +3,11 @@ import * as React from "react";
 import styled from "styled-components";
 import Box from "./styles/Box";
 import Map from "./Map";
+import { Coordinate } from "./types/WeatherDataTypes";
 
 type HeaderProps = {
-    latitude:              number;
-    longitude:             number;
-    elevation:             number;
-}
+    elevation: number;
+} & Coordinate
 
 export default (props: HeaderProps) => 
     <header>
