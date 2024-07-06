@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import * as React from "react";
 import '@testing-library/jest-dom'
-import Weather from './Weather';
+import Weather from '../src/Weather';
 
 
 /**
