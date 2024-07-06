@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "serve": "http-server",
+    "serve": "webpack && http-server",
     "test": "jest"
   },
   "devDependencies": {

@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import {within} from '@testing-library/dom'
 import * as React from "react";
 import '@testing-library/jest-dom'
-import Weather from '../src/Weather';
+import Weather from '../src/WeatherDisplay';
 import weatherdata from './data/weatherdata';
 
 test('in the header it renders information about the current location', () => {
