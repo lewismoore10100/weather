@@ -1,6 +1,10 @@
-export interface LocationWeatherData {
+export type Coordinate = {
     latitude:              number;
     longitude:             number;
+}
+
+export type LocationWeatherData = {
+    
     generationtime_ms:     number;
     utc_offset_seconds:    number;
     timezone:              string;
@@ -10,16 +14,16 @@ export interface LocationWeatherData {
     current:               Current;
     hourly_units:          Units;
     hourly:                Hourly;
-}
+} & Coordinate
 
-export interface Current {
+export type Current = {
     time:           string;
     interval:       number;
     temperature_2m: number;
     wind_speed_10m: number;
 }
 
-export interface Units {
+export type Units = {
     time:                  string;
     interval?:             string;
     temperature_2m:        string;
@@ -27,7 +31,7 @@ export interface Units {
     relative_humidity_2m?: string;
 }
 
-export interface Hourly {
+export type Hourly = {
     time:                 string[];
     temperature_2m:       number[];
     relative_humidity_2m: number[];
