@@ -1,7 +1,8 @@
 import * as React from "react";
-import { Coordinate } from "./types/WeatherDataTypes";
+
 import styled from "styled-components";
 import Box from "./styles/Box";
+import Map from "./Map";
 
 type HeaderProps = {
     latitude:              number;
@@ -23,8 +24,3 @@ export default (props: HeaderProps) =>
     </header>
 
 
-const Map = (prop: Coordinate) => {
-    const url = `https://www.openstreetmap.org/export/embed.html?bbox=${prop.longitude}%2C${prop.latitude}%2C${prop.longitude}%2C${prop.latitude}&amp;layer=mapnik`
-
-    return <iframe width="425" height="350" src={url}></iframe>
-}
