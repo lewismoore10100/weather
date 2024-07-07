@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { JsxElement } from "typescript";
+import { Heading2 } from "./styles/headings";
 
 
 type BoxProps = {
@@ -10,7 +10,7 @@ type BoxProps = {
 
 export default (props: BoxProps) => 
     <BorderedBox>
-        <h2>{props.title}</h2>
+        <Heading2>{props.title}</Heading2>
         {props.children}
     </BorderedBox>
 
