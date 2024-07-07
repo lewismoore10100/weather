@@ -1,5 +1,5 @@
 import * as React from "react";
-import styled from "styled-components";
+import { BorderedBox } from "./styles/boxes";
 import { Heading2 } from "./styles/headings";
 
 
@@ -13,10 +13,3 @@ export default (props: BoxProps) =>
         <Heading2>{props.title}</Heading2>
         {props.children}
     </BorderedBox>
-
-
-const BorderedBox = styled.div`
-    padding: 1rem;
-    border: 0.2em solid #000;
-    border-radius: 2rem;
-`
