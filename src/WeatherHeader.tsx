@@ -20,8 +20,5 @@ export default (props: HeaderProps) =>
             </ul>
             <Map {...props}/>
             </>
-        </Box>
-        
+        </Box>        
     </header>
-
-
