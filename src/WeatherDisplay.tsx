@@ -2,7 +2,7 @@ import * as React from "react";
 import {useEffect, useState} from "react";
 import styled from "styled-components";
 import { LocationWeatherData } from "./types/WeatherDataTypes";
-import WeatherHeader from "./WeatherHeader";
+import Location from "./Location";
 
 
 type WeatherProps =  {
@@ -11,4 +11,4 @@ type WeatherProps =  {
 
 
 export default (props: WeatherProps) => 
-        <WeatherHeader {...props.locationWeatherData}></WeatherHeader>
+        <Location {...props.locationWeatherData}></Location>

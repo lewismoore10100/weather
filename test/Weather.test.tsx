@@ -7,15 +7,11 @@ import weatherdata from './data/weatherdata';
 
 test('in the header it renders information about the current location', () => {
   render(<Weather locationWeatherData={weatherdata} />);
-  const headerElement = screen.getByRole('banner');
+  const locationHeading = screen.getByText('Location');
 
-  const items = within(headerElement).getAllByRole('listitem');
+  const items = within(locationHeading.parentElement).getAllByRole('listitem');
 
   expect(items[0].textContent).toBe('Latitude: 52.52')
   expect(items[1].textContent).toBe('Longitude: 13.419998')
   expect(items[2].textContent).toBe('Elevation: 38')
-
-
-
-  expect(headerElement).toBeInTheDocument();
 });
