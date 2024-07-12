@@ -5,7 +5,7 @@ import { Heading2 } from "./styles/headings";
 
 type BoxProps = {
     title: string
-    children: React.ReactElement
+    children: React.ReactElement | ReadonlyArray<React.ReactElement>
 }
 
 export default (props: BoxProps) => 

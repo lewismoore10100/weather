@@ -11,6 +11,4 @@ type WeatherProps =  {
 
 
 export default (props: WeatherProps) => 
-    <>  
         <WeatherHeader {...props.locationWeatherData}></WeatherHeader>
-    </>
